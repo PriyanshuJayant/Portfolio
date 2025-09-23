@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "react-scripts start"
   },
   "dependencies": {
+    "framer": "^2.4.1",
     "framer-motion": "^12.23.19",
+    "motion": "^12.23.19",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1"

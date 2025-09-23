@@ -1,11 +1,18 @@
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home";
+import { motion } from "framer-motion";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
