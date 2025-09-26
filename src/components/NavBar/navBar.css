@@ -1,0 +1,32 @@
+.navBar {
+  /* margin-top: 0.8rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem 0 2rem;
+  height: 5rem auto;
+  width: auto;
+
+}
+.nav-btn-container {
+  border: 2px solid lightgreen;
+  height: 5rem;
+  width: 21rem;
+  gap: 1rem;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-btn {
+  border: 2px solid white;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  border-radius: 30px;
+  
+
+}

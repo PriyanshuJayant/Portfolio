@@ -7,12 +7,14 @@ import LiquidGlass from "./pages/test/LiquidGlass";
 function App() {
   return (
     <>
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          {/* <Route path="/test" element={<LiquidGlass/>}/> */}
+          <Route path="/test" element={<LiquidGlass/>}/>
         </Routes>
       </BrowserRouter>
+    </div>
     </>
   );
 }
