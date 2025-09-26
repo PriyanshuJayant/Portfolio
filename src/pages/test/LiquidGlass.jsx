@@ -9,15 +9,17 @@ function LiquidGlass() {
     <>
       <div className="overlay">
         <GlassElement
-          width={300}
-          height={200}
+          width={80}
+          height={55}
           radius={90}
-          depth={10}
-          blur={1}
+          depth={1}
+          blur={0}
           chromaticAberration={5}
           debug={false}
-        />
-        <GlassElement
+        >
+          Small
+        </GlassElement>
+        {/* <GlassElement
           width={200}
           height={200}
           radius={100}
@@ -34,11 +36,10 @@ function LiquidGlass() {
           blur={1}
           chromaticAberration={1}
           debug={false}
-        />
+        /> */}
       </div>
       <img src="/images/AS11-40-5865HR.webp" alt="" />
       <img src="/images/AS11-40-5872HR.webp" alt="" />
-      <img src="/images/AS11-40-5877HR.webp" alt="" />
       <img src="/images/AS11-40-5899HR.webp" alt="" />
       <img src="/images/AS11-40-5902HR.webp" alt="" />
       <img src="/images/AS11-40-6642HR.webp" alt="" />
