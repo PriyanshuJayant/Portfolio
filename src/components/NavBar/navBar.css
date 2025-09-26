@@ -1,13 +1,14 @@
 .navBar {
-  /* margin-top: 0.8rem; */
+  /* border:2px solid white; */
+  margin-top: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 0 2rem 0 2rem;
   height: 5rem auto;
-  width: auto;
-
+  width: 100vw;
+  position: absolute;
 }
 .nav-btn-container {
   border: 2px solid lightgreen;

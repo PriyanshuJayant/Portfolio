@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 .Home-Page {
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
-  margin: 0; /* Remove default margins */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   padding: 0;
-  background-image: url("https://images.unsplash.com/photo-1529458026081-439a0f7715b6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmElMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url("https://images.unsplash.com/photo-1529458026081-439a0f7715b6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmElMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D"); */
+  /* background-position: center center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }

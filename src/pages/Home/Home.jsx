@@ -8,8 +8,8 @@ function Home() {
   return (
     <>
     <div className="Home-Page">
-      {/* <NavBar/> */}
-        {/* <Hero/> */}
+      <NavBar/>
+        <Hero/>
     </div>
     </>
   );
