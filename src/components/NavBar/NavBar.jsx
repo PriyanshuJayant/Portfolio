@@ -20,24 +20,19 @@ function NavBar() {
 
   return (
     <>
+      {/* Parent Starting  */}
       <motion.div
         className="navBar"
-        initial={{
-          y: 0,
-          opacity: 0.01,
-        }}
+        initial={{ y: 0, opacity: 0.01 }}
         animate={show ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          damping: 10,
-        }}
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}
         style={{ position: "fixed", top: 0, width: "100%" }}
       >
-        <motion.div 
+        {/* Home Wrapper  */}
+        <motion.div
           className="glass-wrapper"
           whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <GlassElement
             className="nav-btn"
@@ -45,7 +40,7 @@ function NavBar() {
             height={55}
             radius={90}
             depth={1}
-            blur={0.4}
+            blur={0.3}
             chromaticAberration={5}
             debug={false}
           >
@@ -53,72 +48,89 @@ function NavBar() {
           </GlassElement>
         </motion.div>
 
-        <motion.div 
+        {/* button container wrapper  */}
+        <motion.div
           className="nav-btn-container"
-          whileHover={{ scale: 1.03 }}  
+          whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
-          <motion.div 
-            className="glass-wrapper"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
+          {/* Projects  */}
+          <GlassElement
+            className="nav-btn-container-child"
+            width={300}
+            height={75} /* 75 */
+            radius={90}
+            depth={4}
+            blur={1}
+            chromaticAberration={5}
+            debug={false}
           >
-            <GlassElement
-              className="nav-btn"
-              width={80}
-              height={55}
-              radius={90}
-              depth={4}
-              blur={1}
-              chromaticAberration={5}
-              debug={false}
+            <motion.div
+              className="glass-wrapper "
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              Projects
-            </GlassElement>
-          </motion.div>
+              <GlassElement
+                className="nav-btn"
+                width={80}
+                height={55}
+                radius={90}
+                depth={4}
+                blur={1}
+                chromaticAberration={5}
+                debug={false}
+              >
+                Projects
+              </GlassElement>
+            </motion.div>
 
-          <motion.div 
-            className="glass-wrapper"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-          >
-            <GlassElement
-              className="nav-btn"
-              width={80}
-              height={55}
-              radius={90}
-              depth={4}
-              blur={1}
-              chromaticAberration={5}
-              debug={false}
+            {/* Skills  */}
+            <motion.div
+              className="glass-wrapper"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              Skills
-            </GlassElement>
-          </motion.div>
+              <GlassElement
+                className="nav-btn"
+                width={80}
+                height={55}
+                radius={90}
+                depth={4}
+                blur={1}
+                chromaticAberration={5}
+                debug={false}
+              >
+                Skills
+              </GlassElement>
+            </motion.div>
 
-          <motion.div 
-            className="glass-wrapper"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-          >
-            <GlassElement
-              className="nav-btn"
-              width={80}
-              height={55}
-              radius={90}
-              depth={4}
-              blur={1}
-              chromaticAberration={5}
-              debug={false}
+            {/* About  */}
+            <motion.div
+              className="glass-wrapper"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              About
-            </GlassElement>
-          </motion.div>
+              <GlassElement
+                className="nav-btn"
+                width={80}
+                height={55}
+                radius={90}
+                depth={4}
+                blur={1}
+                chromaticAberration={5}
+                debug={false}
+              >
+                About
+              </GlassElement>
+            </motion.div>
+          </GlassElement>
         </motion.div>
 
-        <motion.div className="glass-wrapper"
+        {/* Contact  */}
+        <motion.div
+          className="glass-wrapper"
           whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <GlassElement
             className="nav-btn"
@@ -133,6 +145,8 @@ function NavBar() {
             Contact
           </GlassElement>
         </motion.div>
+
+        {/* Parent Ending */}
       </motion.div>
     </>
   );

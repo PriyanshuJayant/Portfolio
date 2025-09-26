@@ -11,13 +11,24 @@
   position: fixed;
 }
 .nav-btn-container {
-  border: 2px solid lightgreen;
+  /* border: 2px solid lightgreen; */
   height: 5rem;
   width: 21rem;
   gap: 1rem;
   border-radius: 35px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+.nav-btn{
+  /* position: absolute; */
+}
+.glass-wrapper{
+  /* position: absolute; */
+}
+.nav-btn-container{
+  /* display: flex !important; */
+  /* gap: 1rem !important; */
+
 }

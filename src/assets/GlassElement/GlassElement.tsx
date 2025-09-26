@@ -132,7 +132,7 @@ export const GlassElement = ({
     fontWeight: "500",
     fontSize: "16px",
     transition: "transform 0.15s ease",
-    transform: clicked ? "scale(0.95)" : "scale(1)",
+    // transform: clicked ? "scale(0.95)" : "scale(1)",
   };
 
   if (debug) {
@@ -149,8 +149,6 @@ export const GlassElement = ({
     <div
       className="box"
       style={style}
-      onMouseDown={() => setClicked(true)}
-      onMouseUp={() => setClicked(false)}
     >
       {children}
     </div>
