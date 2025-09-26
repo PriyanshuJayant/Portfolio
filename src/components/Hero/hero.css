@@ -1,4 +1,16 @@
-.hero-container{
-    height: 100vh;
-    width: 100vw;
+.hero-container {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.993);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.hero-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: black;
 }

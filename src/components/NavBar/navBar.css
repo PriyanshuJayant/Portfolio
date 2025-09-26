@@ -9,6 +9,7 @@
   height: 5rem auto;
   width: 100vw;
   position: fixed;
+  z-index: 100;
 }
 .nav-btn-container {
   /* border: 2px solid lightgreen; */
@@ -20,15 +21,4 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-.nav-btn{
-  /* position: absolute; */
-}
-.glass-wrapper{
-  /* position: absolute; */
-}
-.nav-btn-container{
-  /* display: flex !important; */
-  /* gap: 1rem !important; */
-
 }

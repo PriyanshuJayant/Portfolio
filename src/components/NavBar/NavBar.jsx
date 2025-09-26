@@ -32,6 +32,7 @@ function NavBar() {
         <motion.div
           className="glass-wrapper"
           whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <GlassElement
@@ -68,6 +69,7 @@ function NavBar() {
             <motion.div
               className="glass-wrapper "
               whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <GlassElement
@@ -88,6 +90,7 @@ function NavBar() {
             <motion.div
               className="glass-wrapper"
               whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <GlassElement
@@ -108,6 +111,7 @@ function NavBar() {
             <motion.div
               className="glass-wrapper"
               whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <GlassElement
@@ -130,6 +134,7 @@ function NavBar() {
         <motion.div
           className="glass-wrapper"
           whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <GlassElement
