@@ -1,0 +1,31 @@
+"use client";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+export default function Navbar() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={show ? { y: 0, opacity: 1 } : { y: -80, opacity: 0 }}
+      transition={{ type: "spring", stiffness: 80 }}
+      className="fixed top-0 left-0 w-full bg-white shadow-md p-4"
+    >
+      <h1 className="text-xl font-bold">My Navbar</h1>
+    </motion.nav>
+  );
+}
